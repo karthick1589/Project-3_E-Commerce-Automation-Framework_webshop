@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MasterMergedSuite" parallel="tests" thread-count="3">
+
+	<listeners>
+		<listener class-name="base.TestListener" />
+	</listeners>
+
+	<test name="Chrome Test">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="testcases.SignUpTest" />
+			<class name="testcases.LoginTest" />
+			<class name="testcases.CartTest" />
+			<class name="testcases.CheckoutTest" />
+			<class name="testcases.NavigationTest" />
+		</classes>
+	</test>
+
+	<!-- <test name="Firefox Test"> 
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="testcases.SignUpTest" />
+			<class name="testcases.LoginTest" />
+			<class name="testcases.CartTest" />
+			<class name="testcases.OrderTest" />
+			<class name="testcases.NavigationTest" />
+			<class name="testcases.UITest" />
+			<class name="testcases.ResponsiveTest" />
+		</classes>
+	</test> -->
+
+</suite>

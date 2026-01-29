@@ -1,0 +1,420 @@
+<html>
+<head>
+<title>TestNG:  Chrome Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Chrome Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>20/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jan 28 16:46:16 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>504 seconds (504325 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.LoginTest.testLoginInvalidEmailFormat()'><b>testLoginInvalidEmailFormat</b><br>Test class: testcases.LoginTest<br>Test method: Verify login with invalid email format<br>Parameters: user.com, pass123</td>
+<td><div><pre>java.lang.AssertionError: Expected &apos;Wrong email&apos; validation but got: Please enter a valid email address. expected [true] but found [false]
+	at testcases.LoginTest.testLoginInvalidEmailFormat(LoginTest.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1387128997", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1387128997'><pre>java.lang.AssertionError: Expected &apos;Wrong email&apos; validation but got: Please enter a valid email address. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at testcases.LoginTest.testLoginInvalidEmailFormat(LoginTest.java:72)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>2</td>
+<td>testcases.LoginTest@13b6aecc</td></tr>
+<tr>
+<td title='testcases.SignUpTest.testSignUpUnique()'><b>testSignUpUnique</b><br>Test class: testcases.SignUpTest<br>Test method: Verify user sign-up with unique credentials</td>
+<td><div><pre>java.lang.RuntimeException: Error writing to Excel: D:\eclipse-workspace\P3-WebShop\src\test\resources\TestData.xlsx (The process cannot access the file because it is being used by another process)
+	at utility.UtilityClass.writeToExcel(UtilityClass.java:144)
+	at testcases.SignUpTest.testSignUpUnique(SignUpTest.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace265478649", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace265478649'><pre>java.lang.RuntimeException: Error writing to Excel: D:\eclipse-workspace\P3-WebShop\src\test\resources\TestData.xlsx (The process cannot access the file because it is being used by another process)
+	at utility.UtilityClass.writeToExcel(UtilityClass.java:144)
+	at testcases.SignUpTest.testSignUpUnique(SignUpTest.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>11</td>
+<td>testcases.SignUpTest@6913c1fb</td></tr>
+<tr>
+<td title='testcases.LoginTest.testLoginInvalidEmailFormat()'><b>testLoginInvalidEmailFormat</b><br>Test class: testcases.LoginTest<br>Test method: Verify login with invalid email format<br>Parameters: user@.com, pass123</td>
+<td><div><pre>java.lang.AssertionError: Expected &apos;Wrong email&apos; validation but got: Please enter a valid email address. expected [true] but found [false]
+	at testcases.LoginTest.testLoginInvalidEmailFormat(LoginTest.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1519776040", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1519776040'><pre>java.lang.AssertionError: Expected &apos;Wrong email&apos; validation but got: Please enter a valid email address. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at testcases.LoginTest.testLoginInvalidEmailFormat(LoginTest.java:72)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>2</td>
+<td>testcases.LoginTest@13b6aecc</td></tr>
+<tr>
+<td title='testcases.CheckoutTest.testPlaceOrderValid()'><b>testPlaceOrderValid</b><br>Test class: testcases.CheckoutTest<br>Test method: Place order with valid details</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;button&quot; class=&quot;button-1 payment-method-next-step-button&quot; onclick=&quot;PaymentMethod.save()&quot; value=&quot;Continue&quot;&gt; is not clickable at point (285, 576). Other element would receive the click: &lt;a href=&quot;#&quot; onclick=&quot;Checkout.back(); return false;&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=144.0.7559.97)
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [05613443b393aa98720f5310ceead9c5, clickElement {id=f.9FA0ABCDB895B775747017FD9ED0B01B.d.DB05EA7066B1856DE2F1286D999406EA.e.190}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.97, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\KARTHI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63258}, goog:processID: 15768, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63258/devtoo..., se:cdpVersion: 144.0.7559.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (05613443b393aa98720f5310ceead9c5)] -&gt; css selector: #payment-method-buttons-container .payment-method-next-step-button]
+Session ID: 05613443b393aa98720f5310ceead9c5
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at pages.CheckoutPage.selectPaymentMethod(CheckoutPage.java:164)
+	at testcases.CheckoutTest.testPlaceOrderValid(CheckoutTest.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace199261134", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace199261134'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;button&quot; class=&quot;button-1 payment-method-next-step-button&quot; onclick=&quot;PaymentMethod.save()&quot; value=&quot;Continue&quot;&gt; is not clickable at point (285, 576). Other element would receive the click: &lt;a href=&quot;#&quot; onclick=&quot;Checkout.back(); return false;&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=144.0.7559.97)
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [05613443b393aa98720f5310ceead9c5, clickElement {id=f.9FA0ABCDB895B775747017FD9ED0B01B.d.DB05EA7066B1856DE2F1286D999406EA.e.190}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.97, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\KARTHI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63258}, goog:processID: 15768, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63258/devtoo..., se:cdpVersion: 144.0.7559.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (05613443b393aa98720f5310ceead9c5)] -&gt; css selector: #payment-method-buttons-container .payment-method-next-step-button]
+Session ID: 05613443b393aa98720f5310ceead9c5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at pages.CheckoutPage.selectPaymentMethod(CheckoutPage.java:164)
+	at testcases.CheckoutTest.testPlaceOrderValid(CheckoutTest.java:57)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>17</td>
+<td>testcases.CheckoutTest@2e377400</td></tr>
+<tr>
+<td title='testcases.LoginTest.testLoginInvalidPassword()'><b>testLoginInvalidPassword</b><br>Test class: testcases.LoginTest<br>Test method: Verify login with incorrect password<br>Parameters: testuser_demo@test.com, WrongPass123</td>
+<td><div><pre>java.lang.AssertionError: Specific error text missing. expected [true] but found [false]
+	at testcases.LoginTest.testLoginInvalidPassword(LoginTest.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1390538127", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1390538127'><pre>java.lang.AssertionError: Specific error text missing. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at testcases.LoginTest.testLoginInvalidPassword(LoginTest.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>2</td>
+<td>testcases.LoginTest@13b6aecc</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.NavigationTest.testBrowseCategories()'><b>testBrowseCategories</b><br>Test class: testcases.NavigationTest<br>Test method: Browse product categories</td>
+<td></td>
+<td>21</td>
+<td>testcases.NavigationTest@1757cd72</td></tr>
+<tr>
+<td title='testcases.SignUpTest.testSignUpExisting()'><b>testSignUpExisting</b><br>Test class: testcases.SignUpTest<br>Test method: Verify sign-up with existing email<br>Parameters: testuser_d24f3@test.com, Pass3ea03</td>
+<td></td>
+<td>5</td>
+<td>testcases.SignUpTest@6913c1fb</td></tr>
+<tr>
+<td title='testcases.SignUpTest.testSignUpExisting()'><b>testSignUpExisting</b><br>Test class: testcases.SignUpTest<br>Test method: Verify sign-up with existing email<br>Parameters: testuser_6d7bc@test.com, Passfe536</td>
+<td></td>
+<td>4</td>
+<td>testcases.SignUpTest@6913c1fb</td></tr>
+<tr>
+<td title='testcases.CheckoutTest.testPlaceOrderEmpty()'><b>testPlaceOrderEmpty</b><br>Test class: testcases.CheckoutTest<br>Test method: Place order with empty form (Negative Test)</td>
+<td></td>
+<td>32</td>
+<td>testcases.CheckoutTest@2e377400</td></tr>
+<tr>
+<td title='testcases.LoginTest.testLoginValid()'><b>testLoginValid</b><br>Test class: testcases.LoginTest<br>Test method: Verify login with valid credentials<br>Parameters: testuser_045b6@test.com, Pass95a50</td>
+<td></td>
+<td>25</td>
+<td>testcases.LoginTest@13b6aecc</td></tr>
+<tr>
+<td title='testcases.SignUpTest.testSignUpExisting()'><b>testSignUpExisting</b><br>Test class: testcases.SignUpTest<br>Test method: Verify sign-up with existing email<br>Parameters: testuser_c0070@test.com, Pass82b9b</td>
+<td></td>
+<td>4</td>
+<td>testcases.SignUpTest@6913c1fb</td></tr>
+<tr>
+<td title='testcases.CartTest.testAddProductToCart()'><b>testAddProductToCart</b><br>Test class: testcases.CartTest<br>Test method: Scenario: Add product to cart</td>
+<td></td>
+<td>6</td>
+<td>testcases.CartTest@158a8276</td></tr>
+<tr>
+<td title='testcases.SignUpTest.testSignUpExisting()'><b>testSignUpExisting</b><br>Test class: testcases.SignUpTest<br>Test method: Verify sign-up with existing email<br>Parameters: testuser_8ad77@test.com, Pass47cf7</td>
+<td></td>
+<td>3</td>
+<td>testcases.SignUpTest@6913c1fb</td></tr>
+<tr>
+<td title='testcases.LoginTest.testLoginEmptyFields()'><b>testLoginEmptyFields</b><br>Test class: testcases.LoginTest<br>Test method: Verify login with empty fields<br>Parameters: , </td>
+<td></td>
+<td>2</td>
+<td>testcases.LoginTest@13b6aecc</td></tr>
+<tr>
+<td title='testcases.SignUpTest.testSignUpExisting()'><b>testSignUpExisting</b><br>Test class: testcases.SignUpTest<br>Test method: Verify sign-up with existing email<br>Parameters: testuser_785ea@test.com, Passb57d1</td>
+<td></td>
+<td>4</td>
+<td>testcases.SignUpTest@6913c1fb</td></tr>
+<tr>
+<td title='testcases.CartTest.testAddMultipleProducts()'><b>testAddMultipleProducts</b><br>Test class: testcases.CartTest<br>Test method: Scenario: Add multiple products to cart</td>
+<td></td>
+<td>7</td>
+<td>testcases.CartTest@158a8276</td></tr>
+<tr>
+<td title='testcases.SignUpTest.testSignUpExisting()'><b>testSignUpExisting</b><br>Test class: testcases.SignUpTest<br>Test method: Verify sign-up with existing email<br>Parameters: testuser_045b6@test.com, Pass95a50</td>
+<td></td>
+<td>3</td>
+<td>testcases.SignUpTest@6913c1fb</td></tr>
+<tr>
+<td title='testcases.SignUpTest.testSignUpEmpty()'><b>testSignUpEmpty</b><br>Test class: testcases.SignUpTest<br>Test method: Verify sign-up with empty fields</td>
+<td></td>
+<td>1</td>
+<td>testcases.SignUpTest@6913c1fb</td></tr>
+<tr>
+<td title='testcases.NavigationTest.testHomeNavigation()'><b>testHomeNavigation</b><br>Test class: testcases.NavigationTest<br>Test method: Verify home navigation</td>
+<td></td>
+<td>2</td>
+<td>testcases.NavigationTest@1757cd72</td></tr>
+<tr>
+<td title='testcases.CartTest.testViewCart()'><b>testViewCart</b><br>Test class: testcases.CartTest<br>Test method: Scenario: View cart with added products</td>
+<td></td>
+<td>6</td>
+<td>testcases.CartTest@158a8276</td></tr>
+<tr>
+<td title='testcases.SignUpTest.testSignUpExisting()'><b>testSignUpExisting</b><br>Test class: testcases.SignUpTest<br>Test method: Verify sign-up with existing email<br>Parameters: testuser_03ab0@test.com, Pass98f25</td>
+<td></td>
+<td>4</td>
+<td>testcases.SignUpTest@6913c1fb</td></tr>
+<tr>
+<td title='testcases.CartTest.testRemoveProduct()'><b>testRemoveProduct</b><br>Test class: testcases.CartTest<br>Test method: Scenario: Remove product from cart</td>
+<td></td>
+<td>6</td>
+<td>testcases.CartTest@158a8276</td></tr>
+<tr>
+<td title='testcases.LoginTest.testPasswordMasking()'><b>testPasswordMasking</b><br>Test class: testcases.LoginTest<br>Test method: Verify password field masks input</td>
+<td></td>
+<td>1</td>
+<td>testcases.LoginTest@13b6aecc</td></tr>
+<tr>
+<td title='testcases.NavigationTest.testViewProductDetails()'><b>testViewProductDetails</b><br>Test class: testcases.NavigationTest<br>Test method: View product details</td>
+<td></td>
+<td>3</td>
+<td>testcases.NavigationTest@1757cd72</td></tr>
+<tr>
+<td title='testcases.LoginTest.testLoginEmptyFields()'><b>testLoginEmptyFields</b><br>Test class: testcases.LoginTest<br>Test method: Verify login with empty fields<br>Parameters: , </td>
+<td></td>
+<td>2</td>
+<td>testcases.LoginTest@13b6aecc</td></tr>
+</table><p>
+</body>
+</html>
