@@ -1,17 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="26" passed="21" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-29T10:08:35 IST" name="Default suite" finished-at="2026-01-29T10:08:57 IST" duration-ms="21659">
+  <suite started-at="2026-01-29T11:59:41 IST" name="MasterMergedSuite" finished-at="2026-01-29T12:13:41 IST" duration-ms="839931">
     <groups>
     </groups>
-    <test started-at="2026-01-29T10:08:35 IST" name="Default test" finished-at="2026-01-29T10:08:57 IST" duration-ms="21659">
+    <test started-at="2026-01-29T11:59:41 IST" name="Chrome Test" finished-at="2026-01-29T12:13:41 IST" duration-ms="839931">
       <class name="testcases.CartTest">
-        <test-method is-config="true" signature="setUpReport()[pri:0, instance:testcases.CartTest@7e990ed7]" started-at="2026-01-29T10:08:34 IST" name="setUpReport" finished-at="2026-01-29T10:08:35 IST" duration-ms="940" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.CartTest@158a8276]" started-at="2026-01-29T11:59:41 IST" name="setup" finished-at="2026-01-29T11:59:59 IST" duration-ms="17828" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.CartTest.testAddProductToCart()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpReport -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.CartTest@7e990ed7]" started-at="2026-01-29T10:08:35 IST" name="setup" finished-at="2026-01-29T10:08:45 IST" duration-ms="9163" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="login()[pri:0, instance:testcases.CartTest@158a8276]" started-at="2026-01-29T11:59:59 IST" name="login" finished-at="2026-01-29T12:00:12 IST" duration-ms="13174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="testAddProductToCart()[pri:1, instance:testcases.CartTest@158a8276]" started-at="2026-01-29T12:00:12 IST" name="testAddProductToCart" description="Scenario: Add product to cart" finished-at="2026-01-29T12:00:19 IST" duration-ms="6633" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The product has been added to your shopping cart expected:<The product has been added to your shopping cart> but was:<Success message mismatch!>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The product has been added to your shopping cart expected:<The product has been added to your shopping cart> but was:<Success message mismatch!>
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
+at testcases.CartTest.testAddProductToCart(CartTest.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddProductToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.CartTest@158a8276]" started-at="2026-01-29T12:00:19 IST" name="tearDown" finished-at="2026-01-29T12:00:20 IST" duration-ms="519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.CartTest@158a8276]" started-at="2026-01-29T12:06:52 IST" name="setup" finished-at="2026-01-29T12:07:08 IST" duration-ms="15319" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.CartTest.testViewCart()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="login()[pri:0, instance:testcases.CartTest@158a8276]" started-at="2026-01-29T12:07:08 IST" name="login" finished-at="2026-01-29T12:07:12 IST" duration-ms="4524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="testViewCart()[pri:2, instance:testcases.CartTest@158a8276]" started-at="2026-01-29T12:07:12 IST" name="testViewCart" description="Scenario: View cart with added products" finished-at="2026-01-29T12:07:19 IST" duration-ms="7053" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testViewCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.CartTest@158a8276]" started-at="2026-01-29T12:07:19 IST" name="tearDown" finished-at="2026-01-29T12:07:20 IST" duration-ms="702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.CartTest@158a8276]" started-at="2026-01-29T12:08:40 IST" name="setup" finished-at="2026-01-29T12:09:37 IST" duration-ms="56396" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.CartTest.testAddMultipleProducts()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="login()[pri:0, instance:testcases.CartTest@158a8276]" started-at="2026-01-29T12:09:37 IST" name="login" finished-at="2026-01-29T12:09:45 IST" duration-ms="8103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="testAddMultipleProducts()[pri:3, instance:testcases.CartTest@158a8276]" started-at="2026-01-29T12:09:45 IST" name="testAddMultipleProducts" description="Scenario: Add multiple products to cart" finished-at="2026-01-29T12:10:06 IST" duration-ms="20582" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddMultipleProducts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.CartTest@158a8276]" started-at="2026-01-29T12:10:06 IST" name="tearDown" finished-at="2026-01-29T12:10:06 IST" duration-ms="710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.CartTest@158a8276]" started-at="2026-01-29T12:12:58 IST" name="setup" finished-at="2026-01-29T12:13:15 IST" duration-ms="17130" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,89 +118,429 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:testcases.CartTest@7e990ed7]" started-at="2026-01-29T10:08:45 IST" name="login" finished-at="2026-01-29T10:08:57 IST" duration-ms="12374" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=144.0.7559.97)
-Build info: version: '4.39.0', revision: '126f156aee'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [be98d9fff183bbd3992a6ec090f4c9f8, findElement {value=ico-login, using=class name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.97, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\KARTHI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60228}, goog:processID: 19028, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60228/devtoo..., se:cdpVersion: 144.0.7559.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: be98d9fff183bbd3992a6ec090f4c9f8]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=144.0.7559.97)
-Build info: version: '4.39.0', revision: '126f156aee'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [be98d9fff183bbd3992a6ec090f4c9f8, findElement {value=ico-login, using=class name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.97, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\KARTHI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60228}, goog:processID: 19028, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60228/devtoo..., se:cdpVersion: 144.0.7559.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: be98d9fff183bbd3992a6ec090f4c9f8
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:67)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy18.toString(Unknown Source)
-at java.base/java.lang.String.valueOf(String.java:4465)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.toString(ExpectedConditions.java:675)
-at java.base/java.lang.String.valueOf(String.java:4465)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:225)
-at pages.LoginPage.clickLoginLink(LoginPage.java:51)
-at testcases.CartTest.login(CartTest.java:26)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        <test-method is-config="true" signature="login()[pri:0, instance:testcases.CartTest@158a8276]" started-at="2026-01-29T12:13:15 IST" name="login" finished-at="2026-01-29T12:13:17 IST" duration-ms="2018" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="testRemoveProduct()[pri:4, instance:testcases.CartTest@7e990ed7]" started-at="2026-01-29T10:08:57 IST" name="testRemoveProduct" description="Scenario: Remove product from cart" finished-at="2026-01-29T10:08:57 IST" duration-ms="0" status="SKIP">
+        <test-method signature="testRemoveProduct()[pri:4, instance:testcases.CartTest@158a8276]" started-at="2026-01-29T12:13:17 IST" name="testRemoveProduct" description="Scenario: Remove product from cart" finished-at="2026-01-29T12:13:19 IST" duration-ms="2113" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=144.0.7559.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [96bea105f0e0b1f8e896ab8bffb522c2, clickElement {id=f.B11ED106092059F615833444CAA7E552.d.F54B202A8D85B7A931E8A94A5C63B6D2.e.24}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.97, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\KARTHI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56335}, goog:processID: 22544, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56335/devtoo..., se:cdpVersion: 144.0.7559.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (96bea105f0e0b1f8e896ab8bffb522c2)] -> partial link text: Books]
+Session ID: 96bea105f0e0b1f8e896ab8bffb522c2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=144.0.7559.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [96bea105f0e0b1f8e896ab8bffb522c2, clickElement {id=f.B11ED106092059F615833444CAA7E552.d.F54B202A8D85B7A931E8A94A5C63B6D2.e.24}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.97, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\KARTHI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56335}, goog:processID: 22544, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56335/devtoo..., se:cdpVersion: 144.0.7559.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (96bea105f0e0b1f8e896ab8bffb522c2)] -> partial link text: Books]
+Session ID: 96bea105f0e0b1f8e896ab8bffb522c2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+at pages.ProductPage.clickBooksCategory(ProductPage.java:61)
+at testcases.CartTest.testRemoveProduct(CartTest.java:87)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoveProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.CartTest@158a8276]" started-at="2026-01-29T12:13:20 IST" name="tearDown" finished-at="2026-01-29T12:13:20 IST" duration-ms="485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.CartTest -->
+      <class name="testcases.NavigationTest">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.NavigationTest@1757cd72]" started-at="2026-01-29T12:00:20 IST" name="setup" finished-at="2026-01-29T12:00:39 IST" duration-ms="19349" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.NavigationTest.testBrowseCategories()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testBrowseCategories()[pri:1, instance:testcases.NavigationTest@1757cd72]" started-at="2026-01-29T12:00:39 IST" name="testBrowseCategories" description="Browse product categories" finished-at="2026-01-29T12:01:01 IST" duration-ms="22190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowseCategories -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.NavigationTest@1757cd72]" started-at="2026-01-29T12:01:02 IST" name="tearDown" finished-at="2026-01-29T12:01:02 IST" duration-ms="394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.NavigationTest@1757cd72]" started-at="2026-01-29T12:07:20 IST" name="setup" finished-at="2026-01-29T12:07:32 IST" duration-ms="11580" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.NavigationTest.testViewProductDetails()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testViewProductDetails()[pri:2, instance:testcases.NavigationTest@1757cd72]" started-at="2026-01-29T12:07:32 IST" name="testViewProductDetails" description="View product details" finished-at="2026-01-29T12:08:40 IST" duration-ms="68187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testViewProductDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.NavigationTest@1757cd72]" started-at="2026-01-29T12:08:40 IST" name="tearDown" finished-at="2026-01-29T12:08:40 IST" duration-ms="550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.NavigationTest@1757cd72]" started-at="2026-01-29T12:10:06 IST" name="setup" finished-at="2026-01-29T12:10:30 IST" duration-ms="23071" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.NavigationTest.testHomeNavigation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testHomeNavigation()[pri:3, instance:testcases.NavigationTest@1757cd72]" started-at="2026-01-29T12:10:30 IST" name="testHomeNavigation" description="Verify home navigation" finished-at="2026-01-29T12:10:36 IST" duration-ms="6315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomeNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.NavigationTest@1757cd72]" started-at="2026-01-29T12:10:36 IST" name="tearDown" finished-at="2026-01-29T12:10:37 IST" duration-ms="629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.NavigationTest -->
+      <class name="testcases.CheckoutTest">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.CheckoutTest@2e377400]" started-at="2026-01-29T12:01:46 IST" name="setup" finished-at="2026-01-29T12:02:00 IST" duration-ms="13773" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.CheckoutTest.testPlaceOrderValid()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testPlaceOrderValid()[pri:1, instance:testcases.CheckoutTest@2e377400]" started-at="2026-01-29T12:02:00 IST" name="testPlaceOrderValid" description="Place order with valid details" finished-at="2026-01-29T12:02:33 IST" duration-ms="33672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPlaceOrderValid -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.CheckoutTest@2e377400]" started-at="2026-01-29T12:02:33 IST" name="tearDown" finished-at="2026-01-29T12:02:34 IST" duration-ms="578" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.CheckoutTest@2e377400]" started-at="2026-01-29T12:03:17 IST" name="setup" finished-at="2026-01-29T12:03:33 IST" duration-ms="16266" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.CheckoutTest.testPlaceOrderEmpty()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testPlaceOrderEmpty()[pri:2, instance:testcases.CheckoutTest@2e377400]" started-at="2026-01-29T12:03:33 IST" name="testPlaceOrderEmpty" description="Place order with empty form (Negative Test)" finished-at="2026-01-29T12:04:11 IST" duration-ms="37797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPlaceOrderEmpty -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.CheckoutTest@2e377400]" started-at="2026-01-29T12:04:11 IST" name="tearDown" finished-at="2026-01-29T12:04:11 IST" duration-ms="435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.CheckoutTest -->
+      <class name="testcases.LoginTest">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.LoginTest@13b6aecc]" started-at="2026-01-29T12:01:02 IST" name="setup" finished-at="2026-01-29T12:01:17 IST" duration-ms="15075" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.LoginTest.testLoginValid(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLoginValid(java.lang.String,java.lang.String)[pri:1, instance:testcases.LoginTest@13b6aecc]" started-at="2026-01-29T12:01:17 IST" name="testLoginValid" description="Verify login with valid credentials" data-provider="LoginData" finished-at="2026-01-29T12:01:45 IST" duration-ms="28060" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser_785ea@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Passb57d1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginValid -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@13b6aecc]" started-at="2026-01-29T12:01:45 IST" name="tearDown" finished-at="2026-01-29T12:01:46 IST" duration-ms="438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.LoginTest@13b6aecc]" started-at="2026-01-29T12:02:57 IST" name="setup" finished-at="2026-01-29T12:03:13 IST" duration-ms="16306" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.LoginTest.testLoginInvalidPassword(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLoginInvalidPassword(java.lang.String,java.lang.String)[pri:2, instance:testcases.LoginTest@13b6aecc]" started-at="2026-01-29T12:03:13 IST" name="testLoginInvalidPassword" description="Verify login with incorrect password" data-provider="InvalidPwdData" finished-at="2026-01-29T12:03:16 IST" duration-ms="3340" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser_demo@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[WrongPass123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Specific error text missing. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Specific error text missing. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at testcases.LoginTest.testLoginInvalidPassword(LoginTest.java:46)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginInvalidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@13b6aecc]" started-at="2026-01-29T12:03:16 IST" name="tearDown" finished-at="2026-01-29T12:03:17 IST" duration-ms="319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.LoginTest@13b6aecc]" started-at="2026-01-29T12:10:37 IST" name="setup" finished-at="2026-01-29T12:11:35 IST" duration-ms="58700" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.LoginTest.testLoginEmptyFields(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLoginEmptyFields(java.lang.String,java.lang.String)[pri:3, instance:testcases.LoginTest@13b6aecc]" started-at="2026-01-29T12:11:35 IST" name="testLoginEmptyFields" description="Verify login with empty fields" data-provider="EmptyData" finished-at="2026-01-29T12:11:40 IST" duration-ms="4789" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginEmptyFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@13b6aecc]" started-at="2026-01-29T12:11:40 IST" name="tearDown" finished-at="2026-01-29T12:11:41 IST" duration-ms="429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.LoginTest@13b6aecc]" started-at="2026-01-29T12:11:41 IST" name="setup" finished-at="2026-01-29T12:11:56 IST" duration-ms="15010" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.LoginTest.testLoginEmptyFields(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLoginEmptyFields(java.lang.String,java.lang.String)[pri:3, instance:testcases.LoginTest@13b6aecc]" started-at="2026-01-29T12:11:56 IST" name="testLoginEmptyFields" description="Verify login with empty fields" data-provider="EmptyData" finished-at="2026-01-29T12:11:59 IST" duration-ms="3244" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginEmptyFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@13b6aecc]" started-at="2026-01-29T12:11:59 IST" name="tearDown" finished-at="2026-01-29T12:12:00 IST" duration-ms="429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.LoginTest@13b6aecc]" started-at="2026-01-29T12:12:17 IST" name="setup" finished-at="2026-01-29T12:12:32 IST" duration-ms="14936" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.LoginTest.testLoginInvalidEmailFormat(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLoginInvalidEmailFormat(java.lang.String,java.lang.String)[pri:4, instance:testcases.LoginTest@13b6aecc]" started-at="2026-01-29T12:12:32 IST" name="testLoginInvalidEmailFormat" description="Verify login with invalid email format" data-provider="InvalidEmailData" finished-at="2026-01-29T12:12:34 IST" duration-ms="2186" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected 'Wrong email' validation but got: Please enter a valid email address. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected 'Wrong email' validation but got: Please enter a valid email address. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at testcases.LoginTest.testLoginInvalidEmailFormat(LoginTest.java:72)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginInvalidEmailFormat -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@13b6aecc]" started-at="2026-01-29T12:12:34 IST" name="tearDown" finished-at="2026-01-29T12:12:35 IST" duration-ms="305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.LoginTest@13b6aecc]" started-at="2026-01-29T12:12:35 IST" name="setup" finished-at="2026-01-29T12:12:47 IST" duration-ms="12677" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.LoginTest.testLoginInvalidEmailFormat(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLoginInvalidEmailFormat(java.lang.String,java.lang.String)[pri:4, instance:testcases.LoginTest@13b6aecc]" started-at="2026-01-29T12:12:47 IST" name="testLoginInvalidEmailFormat" description="Verify login with invalid email format" data-provider="InvalidEmailData" finished-at="2026-01-29T12:12:58 IST" duration-ms="10449" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user@.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass123]]>
+              </value>
+            </param>
+          </params>
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
@@ -113,9 +549,9 @@ from unknown error: web view not found
 Build info: version: '4.39.0', revision: '126f156aee'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [be98d9fff183bbd3992a6ec090f4c9f8, findElement {value=ico-login, using=class name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.97, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\KARTHI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60228}, goog:processID: 19028, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60228/devtoo..., se:cdpVersion: 144.0.7559.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: be98d9fff183bbd3992a6ec090f4c9f8]]>
+Command: [fd63558a03cf50667a2c0763885ef43c, findElement {value=ico-login, using=class name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.97, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\KARTHI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50446}, goog:processID: 7468, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50446/devtoo..., se:cdpVersion: 144.0.7559.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fd63558a03cf50667a2c0763885ef43c]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
@@ -124,9 +560,9 @@ from unknown error: web view not found
 Build info: version: '4.39.0', revision: '126f156aee'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [be98d9fff183bbd3992a6ec090f4c9f8, findElement {value=ico-login, using=class name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.97, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\KARTHI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60228}, goog:processID: 19028, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60228/devtoo..., se:cdpVersion: 144.0.7559.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: be98d9fff183bbd3992a6ec090f4c9f8
+Command: [fd63558a03cf50667a2c0763885ef43c, findElement {value=ico-login, using=class name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.97, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\KARTHI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50446}, goog:processID: 7468, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50446/devtoo..., se:cdpVersion: 144.0.7559.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fd63558a03cf50667a2c0763885ef43c
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -143,21 +579,17 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy18.toString(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy19.toString(Unknown Source)
 at java.base/java.lang.String.valueOf(String.java:4465)
 at org.openqa.selenium.support.ui.ExpectedConditions$23.toString(ExpectedConditions.java:675)
 at java.base/java.lang.String.valueOf(String.java:4465)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:225)
 at pages.LoginPage.clickLoginLink(LoginPage.java:51)
-at testcases.CartTest.login(CartTest.java:26)
+at testcases.LoginTest.testLoginInvalidEmailFormat(LoginTest.java:67)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
@@ -168,33 +600,338 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:741)
 at org.testng.TestRunner.run(TestRunner.java:616)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testRemoveProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.CartTest@7e990ed7]" started-at="2026-01-29T10:08:57 IST" name="tearDown" finished-at="2026-01-29T10:08:57 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- testLoginInvalidEmailFormat -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@13b6aecc]" started-at="2026-01-29T12:12:58 IST" name="tearDown" finished-at="2026-01-29T12:12:58 IST" duration-ms="241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:testcases.CartTest@7e990ed7]" started-at="2026-01-29T10:08:57 IST" name="flushReport" finished-at="2026-01-29T10:08:57 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.LoginTest@13b6aecc]" started-at="2026-01-29T12:13:20 IST" name="setup" finished-at="2026-01-29T12:13:39 IST" duration-ms="18994" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.LoginTest.testPasswordMasking()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testPasswordMasking()[pri:5, instance:testcases.LoginTest@13b6aecc]" started-at="2026-01-29T12:13:39 IST" name="testPasswordMasking" description="Verify password field masks input" finished-at="2026-01-29T12:13:40 IST" duration-ms="1426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPasswordMasking -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@13b6aecc]" started-at="2026-01-29T12:13:41 IST" name="tearDown" finished-at="2026-01-29T12:13:41 IST" duration-ms="418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.LoginTest -->
+      <class name="testcases.SignUpTest">
+        <test-method is-config="true" signature="setUpReport()[pri:0, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T11:59:41 IST" name="setUpReport" finished-at="2026-01-29T11:59:41 IST" duration-ms="473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpReport -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:02:34 IST" name="setup" finished-at="2026-01-29T12:02:51 IST" duration-ms="16484" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.SignUpTest.testSignUpUnique()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testSignUpUnique()[pri:1, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:02:51 IST" name="testSignUpUnique" description="Verify user sign-up with unique credentials" finished-at="2026-01-29T12:02:56 IST" duration-ms="5339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignUpUnique -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:02:56 IST" name="tearDown" finished-at="2026-01-29T12:02:56 IST" duration-ms="431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:04:11 IST" name="setup" finished-at="2026-01-29T12:04:26 IST" duration-ms="14711" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.SignUpTest.testSignUpExisting(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testSignUpExisting(java.lang.String,java.lang.String)[pri:2, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:04:26 IST" name="testSignUpExisting" description="Verify sign-up with existing email" data-provider="getUserData" finished-at="2026-01-29T12:04:31 IST" duration-ms="4530" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser_d24f3@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass3ea03]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignUpExisting -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:04:31 IST" name="tearDown" finished-at="2026-01-29T12:04:31 IST" duration-ms="316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:04:31 IST" name="setup" finished-at="2026-01-29T12:04:45 IST" duration-ms="14107" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.SignUpTest.testSignUpExisting(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testSignUpExisting(java.lang.String,java.lang.String)[pri:2, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:04:45 IST" name="testSignUpExisting" description="Verify sign-up with existing email" data-provider="getUserData" finished-at="2026-01-29T12:04:49 IST" duration-ms="4005" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser_c0070@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass82b9b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignUpExisting -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:04:49 IST" name="tearDown" finished-at="2026-01-29T12:04:50 IST" duration-ms="316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:04:50 IST" name="setup" finished-at="2026-01-29T12:05:03 IST" duration-ms="13590" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.SignUpTest.testSignUpExisting(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testSignUpExisting(java.lang.String,java.lang.String)[pri:2, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:05:03 IST" name="testSignUpExisting" description="Verify sign-up with existing email" data-provider="getUserData" finished-at="2026-01-29T12:05:07 IST" duration-ms="4060" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser_045b6@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass95a50]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignUpExisting -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:05:07 IST" name="tearDown" finished-at="2026-01-29T12:05:08 IST" duration-ms="330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:05:08 IST" name="setup" finished-at="2026-01-29T12:05:23 IST" duration-ms="15555" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.SignUpTest.testSignUpExisting(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testSignUpExisting(java.lang.String,java.lang.String)[pri:2, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:05:23 IST" name="testSignUpExisting" description="Verify sign-up with existing email" data-provider="getUserData" finished-at="2026-01-29T12:05:27 IST" duration-ms="3934" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser_03ab0@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass98f25]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignUpExisting -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:05:27 IST" name="tearDown" finished-at="2026-01-29T12:05:28 IST" duration-ms="313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:05:28 IST" name="setup" finished-at="2026-01-29T12:05:41 IST" duration-ms="13875" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.SignUpTest.testSignUpExisting(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testSignUpExisting(java.lang.String,java.lang.String)[pri:2, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:05:41 IST" name="testSignUpExisting" description="Verify sign-up with existing email" data-provider="getUserData" finished-at="2026-01-29T12:05:46 IST" duration-ms="5055" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser_6d7bc@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Passfe536]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignUpExisting -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:05:47 IST" name="tearDown" finished-at="2026-01-29T12:05:47 IST" duration-ms="560" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:05:47 IST" name="setup" finished-at="2026-01-29T12:05:56 IST" duration-ms="9283" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.SignUpTest.testSignUpExisting(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testSignUpExisting(java.lang.String,java.lang.String)[pri:2, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:05:56 IST" name="testSignUpExisting" description="Verify sign-up with existing email" data-provider="getUserData" finished-at="2026-01-29T12:06:09 IST" duration-ms="12660" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser_785ea@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Passb57d1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignUpExisting -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:06:09 IST" name="tearDown" finished-at="2026-01-29T12:06:10 IST" duration-ms="744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:06:10 IST" name="setup" finished-at="2026-01-29T12:06:25 IST" duration-ms="15422" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.SignUpTest.testSignUpExisting(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testSignUpExisting(java.lang.String,java.lang.String)[pri:2, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:06:25 IST" name="testSignUpExisting" description="Verify sign-up with existing email" data-provider="getUserData" finished-at="2026-01-29T12:06:31 IST" duration-ms="5267" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser_8ad77@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass47cf7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignUpExisting -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:06:31 IST" name="tearDown" finished-at="2026-01-29T12:06:31 IST" duration-ms="400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:06:31 IST" name="setup" finished-at="2026-01-29T12:06:47 IST" duration-ms="15839" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.SignUpTest.testSignUpExisting(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testSignUpExisting(java.lang.String,java.lang.String)[pri:2, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:06:47 IST" name="testSignUpExisting" description="Verify sign-up with existing email" data-provider="getUserData" finished-at="2026-01-29T12:06:52 IST" duration-ms="4666" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser_cc34c@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass634a2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignUpExisting -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:06:52 IST" name="tearDown" finished-at="2026-01-29T12:06:52 IST" duration-ms="441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:12:00 IST" name="setup" finished-at="2026-01-29T12:12:14 IST" duration-ms="14746" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.SignUpTest.testSignUpEmpty()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testSignUpEmpty()[pri:3, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:12:14 IST" name="testSignUpEmpty" description="Verify sign-up with empty fields" finished-at="2026-01-29T12:12:16 IST" duration-ms="2014" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignUpEmpty -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:12:17 IST" name="tearDown" finished-at="2026-01-29T12:12:17 IST" duration-ms="398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:testcases.SignUpTest@6913c1fb]" started-at="2026-01-29T12:13:41 IST" name="flushReport" finished-at="2026-01-29T12:13:42 IST" duration-ms="644" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->
-      </class> <!-- testcases.CartTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- testcases.SignUpTest -->
+    </test> <!-- Chrome Test -->
+  </suite> <!-- MasterMergedSuite -->
 </testng-results>

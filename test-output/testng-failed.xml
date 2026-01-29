@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite thread-count="3" parallel="tests" name="Failed suite [MasterMergedSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="base.TestListener"/>
+  </listeners>
+  <test thread-count="3" parallel="tests" name="Chrome Test(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="testcases.CartTest">
         <methods>
+          <include name="testAddProductToCart"/>
           <include name="setUpReport"/>
           <include name="tearDown"/>
           <include name="login"/>
@@ -13,6 +18,16 @@
           <include name="testRemoveProduct"/>
         </methods>
       </class> <!-- testcases.CartTest -->
+      <class name="testcases.LoginTest">
+        <methods>
+          <include name="setUpReport"/>
+          <include name="testLoginInvalidEmailFormat" invocation-numbers="0 1"/>
+          <include name="tearDown"/>
+          <include name="flushReport"/>
+          <include name="setup"/>
+          <include name="testLoginInvalidPassword" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testcases.LoginTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Chrome Test(failed) -->
+</suite> <!-- Failed suite [MasterMergedSuite] -->

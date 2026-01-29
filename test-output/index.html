@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-skipped">Default suite</span>
+            <a href="#" panel-name="suite-MasterMergedSuite" class="navigator-link">
+              <span class="suite-name border-failed">MasterMergedSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\KarthickGopal\AppData\Local\Temp\testng-eclipse-1278122443\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-MasterMergedSuite" class="navigator-link ">
+                    <span>D:\eclipse-workspace\P3-WebShop\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-MasterMergedSuite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-MasterMergedSuite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-MasterMergedSuite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-MasterMergedSuite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-MasterMergedSuite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-MasterMergedSuite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,21 +92,155 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,  1 skipped,  </span>
+                    <span class="method-stats">26 methods, 5 failed,   21 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-MasterMergedSuite" class="hide-methods failed suite-MasterMergedSuite"> (hide)</a> <!-- hide-methods failed suite-MasterMergedSuite -->
+                      <a href="#" panel-name="suite-MasterMergedSuite" class="show-methods failed suite-MasterMergedSuite"> (show)</a> <!-- show-methods failed suite-MasterMergedSuite -->
                     </span>
-                    <div class="method-list-content skipped suite-Default_suite">
+                    <div class="method-list-content failed suite-MasterMergedSuite">
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcases.CartTest" class="method navigator-link" hash-for-method="testRemoveProduct">testRemoveProduct</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MasterMergedSuite" title="testcases.CartTest" class="method navigator-link" hash-for-method="testAddProductToCart">testAddProductToCart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Default_suite -->
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MasterMergedSuite" title="testcases.LoginTest" class="method navigator-link" hash-for-method="testLoginInvalidEmailFormat(user.com, pass123)">testLoginInvalidEmailFormat(user.com, pass123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MasterMergedSuite" title="testcases.LoginTest" class="method navigator-link" hash-for-method="testLoginInvalidEmailFormat(user@.com, pass123)">testLoginInvalidEmailFormat(user@.com, pass123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MasterMergedSuite" title="testcases.LoginTest" class="method navigator-link" hash-for-method="testLoginInvalidPassword(testuser_demo@test.com, WrongPass123)">testLoginInvalidPassword(testuser_demo@test.com, WrongPass123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MasterMergedSuite" title="testcases.CartTest" class="method navigator-link" hash-for-method="testRemoveProduct">testRemoveProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-MasterMergedSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-MasterMergedSuite" class="hide-methods passed suite-MasterMergedSuite"> (hide)</a> <!-- hide-methods passed suite-MasterMergedSuite -->
+                      <a href="#" panel-name="suite-MasterMergedSuite" class="show-methods passed suite-MasterMergedSuite"> (show)</a> <!-- show-methods passed suite-MasterMergedSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-MasterMergedSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MasterMergedSuite" title="testcases.CartTest" class="method navigator-link" hash-for-method="testAddMultipleProducts">testAddMultipleProducts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MasterMergedSuite" title="testcases.NavigationTest" class="method navigator-link" hash-for-method="testBrowseCategories">testBrowseCategories</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MasterMergedSuite" title="testcases.NavigationTest" class="method navigator-link" hash-for-method="testHomeNavigation">testHomeNavigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MasterMergedSuite" title="testcases.LoginTest" class="method navigator-link" hash-for-method="testLoginEmptyFields(, )">testLoginEmptyFields(, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MasterMergedSuite" title="testcases.LoginTest" class="method navigator-link" hash-for-method="testLoginEmptyFields(, )">testLoginEmptyFields(, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MasterMergedSuite" title="testcases.LoginTest" class="method navigator-link" hash-for-method="testLoginValid(testuser_785ea@test.com, Passb57d1)">testLoginValid(testuser_785ea@test.com, Passb57d1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MasterMergedSuite" title="testcases.LoginTest" class="method navigator-link" hash-for-method="testPasswordMasking">testPasswordMasking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MasterMergedSuite" title="testcases.CheckoutTest" class="method navigator-link" hash-for-method="testPlaceOrderEmpty">testPlaceOrderEmpty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MasterMergedSuite" title="testcases.CheckoutTest" class="method navigator-link" hash-for-method="testPlaceOrderValid">testPlaceOrderValid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MasterMergedSuite" title="testcases.SignUpTest" class="method navigator-link" hash-for-method="testSignUpEmpty">testSignUpEmpty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MasterMergedSuite" title="testcases.SignUpTest" class="method navigator-link" hash-for-method="testSignUpExisting(testuser_c0070@test.com, Pass82b9b)">testSignUpExisting(testuser_c0070@test.com, Pass82b9b)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MasterMergedSuite" title="testcases.SignUpTest" class="method navigator-link" hash-for-method="testSignUpExisting(testuser_d24f3@test.com, Pass3ea03)">testSignUpExisting(testuser_d24f3@test.com, Pass3ea03)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MasterMergedSuite" title="testcases.SignUpTest" class="method navigator-link" hash-for-method="testSignUpExisting(testuser_8ad77@test.com, Pass47cf7)">testSignUpExisting(testuser_8ad77@test.com, Pass47cf7)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MasterMergedSuite" title="testcases.SignUpTest" class="method navigator-link" hash-for-method="testSignUpExisting(testuser_03ab0@test.com, Pass98f25)">testSignUpExisting(testuser_03ab0@test.com, Pass98f25)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MasterMergedSuite" title="testcases.SignUpTest" class="method navigator-link" hash-for-method="testSignUpExisting(testuser_cc34c@test.com, Pass634a2)">testSignUpExisting(testuser_cc34c@test.com, Pass634a2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MasterMergedSuite" title="testcases.SignUpTest" class="method navigator-link" hash-for-method="testSignUpExisting(testuser_6d7bc@test.com, Passfe536)">testSignUpExisting(testuser_6d7bc@test.com, Passfe536)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MasterMergedSuite" title="testcases.SignUpTest" class="method navigator-link" hash-for-method="testSignUpExisting(testuser_045b6@test.com, Pass95a50)">testSignUpExisting(testuser_045b6@test.com, Pass95a50)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MasterMergedSuite" title="testcases.SignUpTest" class="method navigator-link" hash-for-method="testSignUpExisting(testuser_785ea@test.com, Passb57d1)">testSignUpExisting(testuser_785ea@test.com, Passb57d1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MasterMergedSuite" title="testcases.SignUpTest" class="method navigator-link" hash-for-method="testSignUpUnique">testSignUpUnique</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MasterMergedSuite" title="testcases.CartTest" class="method navigator-link" hash-for-method="testViewCart">testViewCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MasterMergedSuite" title="testcases.NavigationTest" class="method navigator-link" hash-for-method="testViewProductDetails">testViewProductDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-MasterMergedSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,30 +251,112 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-skipped">
+        <div panel-name="suite-MasterMergedSuite" class="panel MasterMergedSuite">
+          <div class="suite-MasterMergedSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
               <span class="class-name">testcases.CartTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="testAddProductToCart">
+                  </a> <!-- testAddProductToCart -->
+                  <span class="method-name">testAddProductToCart</span>
+                  <div class="stack-trace">java.lang.AssertionError: The product has been added to your shopping cart expected:&lt;The product has been added to your shopping cart&gt; but was:&lt;Success message mismatch!&gt;
+	at testcases.CartTest.testAddProductToCart(CartTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Scenario: Add product to cart)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="testRemoveProduct">
                   </a> <!-- testRemoveProduct -->
                   <span class="method-name">testRemoveProduct</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=144.0.7559.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [96bea105f0e0b1f8e896ab8bffb522c2, clickElement {id=f.B11ED106092059F615833444CAA7E552.d.F54B202A8D85B7A931E8A94A5C63B6D2.e.24}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.97, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\KARTHI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56335}, goog:processID: 22544, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56335/devtoo..., se:cdpVersion: 144.0.7559.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (96bea105f0e0b1f8e896ab8bffb522c2)] -&gt; partial link text: Books]
+Session ID: 96bea105f0e0b1f8e896ab8bffb522c2
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at pages.ProductPage.clickBooksCategory(ProductPage.java:61)
+	at testcases.CartTest.testRemoveProduct(CartTest.java:87)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Scenario: Remove product from cart)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MasterMergedSuite-class-failed -->
+          <div class="suite-MasterMergedSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginInvalidEmailFormat(user.com, pass123)">
+                  </a> <!-- testLoginInvalidEmailFormat(user.com, pass123) -->
+                  <span class="method-name">testLoginInvalidEmailFormat</span>
+                  <span class="parameters">(user.com,pass123)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected &apos;Wrong email&apos; validation but got: Please enter a valid email address. expected [true] but found [false]
+	at testcases.LoginTest.testLoginInvalidEmailFormat(LoginTest.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify login with invalid email format)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginInvalidEmailFormat(user@.com, pass123)">
+                  </a> <!-- testLoginInvalidEmailFormat(user@.com, pass123) -->
+                  <span class="method-name">testLoginInvalidEmailFormat</span>
+                  <span class="parameters">(user@.com,pass123)</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=144.0.7559.97)
 Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [be98d9fff183bbd3992a6ec090f4c9f8, findElement {value=ico-login, using=class name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.97, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\KARTHI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60228}, goog:processID: 19028, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60228/devtoo..., se:cdpVersion: 144.0.7559.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: be98d9fff183bbd3992a6ec090f4c9f8
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+Command: [fd63558a03cf50667a2c0763885ef43c, findElement {value=ico-login, using=class name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.97, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\KARTHI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50446}, goog:processID: 7468, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50446/devtoo..., se:cdpVersion: 144.0.7559.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fd63558a03cf50667a2c0763885ef43c
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -154,168 +370,917 @@ Session ID: be98d9fff183bbd3992a6ec090f4c9f8
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.toString(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.toString(Unknown Source)
 	at java.base/java.lang.String.valueOf(String.java:4465)
 	at org.openqa.selenium.support.ui.ExpectedConditions$23.toString(ExpectedConditions.java:675)
 	at java.base/java.lang.String.valueOf(String.java:4465)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:225)
 	at pages.LoginPage.clickLoginLink(LoginPage.java:51)
-	at testcases.CartTest.login(CartTest.java:26)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at testcases.LoginTest.testLoginInvalidEmailFormat(LoginTest.java:67)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 18 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(Scenario: Remove product from cart)                  </em>
+(Verify login with invalid email format)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginInvalidPassword(testuser_demo@test.com, WrongPass123)">
+                  </a> <!-- testLoginInvalidPassword(testuser_demo@test.com, WrongPass123) -->
+                  <span class="method-name">testLoginInvalidPassword</span>
+                  <span class="parameters">(testuser_demo@test.com,WrongPass123)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Specific error text missing. expected [true] but found [false]
+	at testcases.LoginTest.testLoginInvalidPassword(LoginTest.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify login with incorrect password)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-skipped -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-MasterMergedSuite-class-failed -->
+          <div class="suite-MasterMergedSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.CartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddMultipleProducts">
+                  </a> <!-- testAddMultipleProducts -->
+                  <span class="method-name">testAddMultipleProducts</span>
+                  <em>
+(Scenario: Add multiple products to cart)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testViewCart">
+                  </a> <!-- testViewCart -->
+                  <span class="method-name">testViewCart</span>
+                  <em>
+(Scenario: View cart with added products)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MasterMergedSuite-class-passed -->
+          <div class="suite-MasterMergedSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.NavigationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBrowseCategories">
+                  </a> <!-- testBrowseCategories -->
+                  <span class="method-name">testBrowseCategories</span>
+                  <em>
+(Browse product categories)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testHomeNavigation">
+                  </a> <!-- testHomeNavigation -->
+                  <span class="method-name">testHomeNavigation</span>
+                  <em>
+(Verify home navigation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testViewProductDetails">
+                  </a> <!-- testViewProductDetails -->
+                  <span class="method-name">testViewProductDetails</span>
+                  <em>
+(View product details)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MasterMergedSuite-class-passed -->
+          <div class="suite-MasterMergedSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.SignUpTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignUpEmpty">
+                  </a> <!-- testSignUpEmpty -->
+                  <span class="method-name">testSignUpEmpty</span>
+                  <em>
+(Verify sign-up with empty fields)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignUpExisting(testuser_c0070@test.com, Pass82b9b)">
+                  </a> <!-- testSignUpExisting(testuser_c0070@test.com, Pass82b9b) -->
+                  <span class="method-name">testSignUpExisting</span>
+                  <span class="parameters">(testuser_c0070@test.com,Pass82b9b)</span>
+                  <em>
+(Verify sign-up with existing email)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignUpExisting(testuser_d24f3@test.com, Pass3ea03)">
+                  </a> <!-- testSignUpExisting(testuser_d24f3@test.com, Pass3ea03) -->
+                  <span class="method-name">testSignUpExisting</span>
+                  <span class="parameters">(testuser_d24f3@test.com,Pass3ea03)</span>
+                  <em>
+(Verify sign-up with existing email)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignUpExisting(testuser_8ad77@test.com, Pass47cf7)">
+                  </a> <!-- testSignUpExisting(testuser_8ad77@test.com, Pass47cf7) -->
+                  <span class="method-name">testSignUpExisting</span>
+                  <span class="parameters">(testuser_8ad77@test.com,Pass47cf7)</span>
+                  <em>
+(Verify sign-up with existing email)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignUpExisting(testuser_03ab0@test.com, Pass98f25)">
+                  </a> <!-- testSignUpExisting(testuser_03ab0@test.com, Pass98f25) -->
+                  <span class="method-name">testSignUpExisting</span>
+                  <span class="parameters">(testuser_03ab0@test.com,Pass98f25)</span>
+                  <em>
+(Verify sign-up with existing email)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignUpExisting(testuser_cc34c@test.com, Pass634a2)">
+                  </a> <!-- testSignUpExisting(testuser_cc34c@test.com, Pass634a2) -->
+                  <span class="method-name">testSignUpExisting</span>
+                  <span class="parameters">(testuser_cc34c@test.com,Pass634a2)</span>
+                  <em>
+(Verify sign-up with existing email)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignUpExisting(testuser_6d7bc@test.com, Passfe536)">
+                  </a> <!-- testSignUpExisting(testuser_6d7bc@test.com, Passfe536) -->
+                  <span class="method-name">testSignUpExisting</span>
+                  <span class="parameters">(testuser_6d7bc@test.com,Passfe536)</span>
+                  <em>
+(Verify sign-up with existing email)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignUpExisting(testuser_045b6@test.com, Pass95a50)">
+                  </a> <!-- testSignUpExisting(testuser_045b6@test.com, Pass95a50) -->
+                  <span class="method-name">testSignUpExisting</span>
+                  <span class="parameters">(testuser_045b6@test.com,Pass95a50)</span>
+                  <em>
+(Verify sign-up with existing email)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignUpExisting(testuser_785ea@test.com, Passb57d1)">
+                  </a> <!-- testSignUpExisting(testuser_785ea@test.com, Passb57d1) -->
+                  <span class="method-name">testSignUpExisting</span>
+                  <span class="parameters">(testuser_785ea@test.com,Passb57d1)</span>
+                  <em>
+(Verify sign-up with existing email)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignUpUnique">
+                  </a> <!-- testSignUpUnique -->
+                  <span class="method-name">testSignUpUnique</span>
+                  <em>
+(Verify user sign-up with unique credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MasterMergedSuite-class-passed -->
+          <div class="suite-MasterMergedSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginEmptyFields(, )">
+                  </a> <!-- testLoginEmptyFields(, ) -->
+                  <span class="method-name">testLoginEmptyFields</span>
+                  <span class="parameters">(,)</span>
+                  <em>
+(Verify login with empty fields)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginEmptyFields(, )">
+                  </a> <!-- testLoginEmptyFields(, ) -->
+                  <span class="method-name">testLoginEmptyFields</span>
+                  <span class="parameters">(,)</span>
+                  <em>
+(Verify login with empty fields)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginValid(testuser_785ea@test.com, Passb57d1)">
+                  </a> <!-- testLoginValid(testuser_785ea@test.com, Passb57d1) -->
+                  <span class="method-name">testLoginValid</span>
+                  <span class="parameters">(testuser_785ea@test.com,Passb57d1)</span>
+                  <em>
+(Verify login with valid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPasswordMasking">
+                  </a> <!-- testPasswordMasking -->
+                  <span class="method-name">testPasswordMasking</span>
+                  <em>
+(Verify password field masks input)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MasterMergedSuite-class-passed -->
+          <div class="suite-MasterMergedSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.CheckoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPlaceOrderEmpty">
+                  </a> <!-- testPlaceOrderEmpty -->
+                  <span class="method-name">testPlaceOrderEmpty</span>
+                  <em>
+(Place order with empty form (Negative Test))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPlaceOrderValid">
+                  </a> <!-- testPlaceOrderValid -->
+                  <span class="method-name">testPlaceOrderValid</span>
+                  <em>
+(Place order with valid details)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MasterMergedSuite-class-passed -->
+        </div> <!-- panel MasterMergedSuite -->
+        <div panel-name="test-xml-MasterMergedSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\KarthickGopal\AppData\Local\Temp\testng-eclipse-1278122443\testng-customsuite.xml</span>
+            <span class="header-content">D:\eclipse-workspace\P3-WebShop\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;MasterMergedSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;base.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Chrome Test&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcases.CartTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;testRemoveProduct&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- testcases.CartTest --&gt;
+      &lt;class name=&quot;testcases.SignUpTest&quot;/&gt;
+      &lt;class name=&quot;testcases.LoginTest&quot;/&gt;
+      &lt;class name=&quot;testcases.CartTest&quot;/&gt;
+      &lt;class name=&quot;testcases.CheckoutTest&quot;/&gt;
+      &lt;class name=&quot;testcases.NavigationTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Chrome Test --&gt;
+&lt;/suite&gt; &lt;!-- MasterMergedSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-MasterMergedSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for MasterMergedSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Chrome Test (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-MasterMergedSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for MasterMergedSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-MasterMergedSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for MasterMergedSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_MasterMergedSuite');
+function tableData_MasterMergedSuite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(26);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testRemoveProduct')
-data.setCell(0, 2, 'testcases.CartTest')
-data.setCell(0, 3, 0);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 1, 'testViewProductDetails')
+data.setCell(0, 2, 'testcases.NavigationTest')
+data.setCell(0, 3, 68187);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testPlaceOrderEmpty')
+data.setCell(1, 2, 'testcases.CheckoutTest')
+data.setCell(1, 3, 37797);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testPlaceOrderValid')
+data.setCell(2, 2, 'testcases.CheckoutTest')
+data.setCell(2, 3, 33672);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testLoginValid')
+data.setCell(3, 2, 'testcases.LoginTest')
+data.setCell(3, 3, 28060);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testBrowseCategories')
+data.setCell(4, 2, 'testcases.NavigationTest')
+data.setCell(4, 3, 22190);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testAddMultipleProducts')
+data.setCell(5, 2, 'testcases.CartTest')
+data.setCell(5, 3, 20582);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testSignUpExisting')
+data.setCell(6, 2, 'testcases.SignUpTest')
+data.setCell(6, 3, 12660);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testLoginInvalidEmailFormat')
+data.setCell(7, 2, 'testcases.LoginTest')
+data.setCell(7, 3, 10449);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testViewCart')
+data.setCell(8, 2, 'testcases.CartTest')
+data.setCell(8, 3, 7053);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testAddProductToCart')
+data.setCell(9, 2, 'testcases.CartTest')
+data.setCell(9, 3, 6633);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testHomeNavigation')
+data.setCell(10, 2, 'testcases.NavigationTest')
+data.setCell(10, 3, 6315);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testSignUpUnique')
+data.setCell(11, 2, 'testcases.SignUpTest')
+data.setCell(11, 3, 5339);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testSignUpExisting')
+data.setCell(12, 2, 'testcases.SignUpTest')
+data.setCell(12, 3, 5267);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testSignUpExisting')
+data.setCell(13, 2, 'testcases.SignUpTest')
+data.setCell(13, 3, 5055);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testLoginEmptyFields')
+data.setCell(14, 2, 'testcases.LoginTest')
+data.setCell(14, 3, 4789);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testSignUpExisting')
+data.setCell(15, 2, 'testcases.SignUpTest')
+data.setCell(15, 3, 4666);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testSignUpExisting')
+data.setCell(16, 2, 'testcases.SignUpTest')
+data.setCell(16, 3, 4530);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testSignUpExisting')
+data.setCell(17, 2, 'testcases.SignUpTest')
+data.setCell(17, 3, 4060);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testSignUpExisting')
+data.setCell(18, 2, 'testcases.SignUpTest')
+data.setCell(18, 3, 4005);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testSignUpExisting')
+data.setCell(19, 2, 'testcases.SignUpTest')
+data.setCell(19, 3, 3934);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testLoginInvalidPassword')
+data.setCell(20, 2, 'testcases.LoginTest')
+data.setCell(20, 3, 3340);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testLoginEmptyFields')
+data.setCell(21, 2, 'testcases.LoginTest')
+data.setCell(21, 3, 3244);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testLoginInvalidEmailFormat')
+data.setCell(22, 2, 'testcases.LoginTest')
+data.setCell(22, 3, 2186);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testRemoveProduct')
+data.setCell(23, 2, 'testcases.CartTest')
+data.setCell(23, 3, 2113);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testSignUpEmpty')
+data.setCell(24, 2, 'testcases.SignUpTest')
+data.setCell(24, 3, 2014);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testPasswordMasking')
+data.setCell(25, 2, 'testcases.LoginTest')
+data.setCell(25, 3, 1426);
+window.suiteTableData['MasterMergedSuite']= { tableData: data, tableDiv: 'times-div-MasterMergedSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 13 minutes</span>
+              <div id="times-div-MasterMergedSuite">
+              </div> <!-- times-div-MasterMergedSuite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-MasterMergedSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for MasterMergedSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-MasterMergedSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">3 ignored methods</span>
+            <span class="header-content">8 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">testcases.CartTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">testViewCart</span>
+                <span class="ignored-method-name">setUpReport</span>
                 <br/>
-                <span class="ignored-method-name">testAddMultipleProducts</span>
+                <span class="ignored-method-name">flushReport</span>
                 <br/>
-                <span class="ignored-method-name">testAddProductToCart</span>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.NavigationTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUpReport</span>
+                <br/>
+                <span class="ignored-method-name">flushReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">flushReport</span>
+                <br/>
+                <span class="ignored-method-name">setUpReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.CheckoutTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">flushReport</span>
+                <br/>
+                <span class="ignored-method-name">setUpReport</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-MasterMergedSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.CartTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcases.SignUpTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setUpReport</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.CartTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setup(public void testcases.CartTest.testRemoveProduct())</span>
-                <span class="method-start">1004 ms</span>
+                <span class="method-name">setup(public void testcases.CartTest.testAddProductToCart())</span>
+                <span class="method-start">549 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">18385 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">login</span>
-                <span class="method-start">10171 ms</span>
+                <span class="method-name">testAddProductToCart</span>
+                <span class="method-start">31560 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">38482 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.NavigationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void testcases.NavigationTest.testBrowseCategories())</span>
+                <span class="method-start">39004 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testBrowseCategories</span>
+                <span class="method-start">58353 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">80954 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void testcases.LoginTest.testLoginValid(java.lang.String,java.lang.String))</span>
+                <span class="method-start">81418 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginValid(testuser_785ea@test.com, Passb57d1)</span>
+                <span class="method-start">96493 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">124744 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.CheckoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void testcases.CheckoutTest.testPlaceOrderValid())</span>
+                <span class="method-start">125182 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPlaceOrderValid</span>
+                <span class="method-start">138955 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">172781 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.SignUpTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void testcases.SignUpTest.testSignUpUnique())</span>
+                <span class="method-start">173359 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSignUpUnique</span>
+                <span class="method-start">189843 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">195356 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void testcases.LoginTest.testLoginInvalidPassword(java.lang.String,java.lang.String))</span>
+                <span class="method-start">195838 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLoginInvalidPassword(testuser_demo@test.com, WrongPass123)</span>
+                <span class="method-start">212144 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">215627 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.CheckoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void testcases.CheckoutTest.testPlaceOrderEmpty())</span>
+                <span class="method-start">215946 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPlaceOrderEmpty</span>
+                <span class="method-start">232212 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">270150 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.SignUpTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void testcases.SignUpTest.testSignUpExisting(java.lang.String,java.lang.String))</span>
+                <span class="method-start">270628 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSignUpExisting(testuser_d24f3@test.com, Pass3ea03)</span>
+                <span class="method-start">285339 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">290004 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void testcases.SignUpTest.testSignUpExisting(java.lang.String,java.lang.String))</span>
+                <span class="method-start">290320 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSignUpExisting(testuser_c0070@test.com, Pass82b9b)</span>
+                <span class="method-start">304427 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">308540 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void testcases.SignUpTest.testSignUpExisting(java.lang.String,java.lang.String))</span>
+                <span class="method-start">308856 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSignUpExisting(testuser_045b6@test.com, Pass95a50)</span>
+                <span class="method-start">322446 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">326590 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void testcases.SignUpTest.testSignUpExisting(java.lang.String,java.lang.String))</span>
+                <span class="method-start">326920 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSignUpExisting(testuser_03ab0@test.com, Pass98f25)</span>
+                <span class="method-start">342475 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">346523 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void testcases.SignUpTest.testSignUpExisting(java.lang.String,java.lang.String))</span>
+                <span class="method-start">346836 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSignUpExisting(testuser_6d7bc@test.com, Passfe536)</span>
+                <span class="method-start">360712 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">365869 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void testcases.SignUpTest.testSignUpExisting(java.lang.String,java.lang.String))</span>
+                <span class="method-start">366429 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSignUpExisting(testuser_785ea@test.com, Passb57d1)</span>
+                <span class="method-start">375712 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">388522 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void testcases.SignUpTest.testSignUpExisting(java.lang.String,java.lang.String))</span>
+                <span class="method-start">389266 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSignUpExisting(testuser_8ad77@test.com, Pass47cf7)</span>
+                <span class="method-start">404688 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">410067 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void testcases.SignUpTest.testSignUpExisting(java.lang.String,java.lang.String))</span>
+                <span class="method-start">410467 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSignUpExisting(testuser_cc34c@test.com, Pass634a2)</span>
+                <span class="method-start">426306 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">431082 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.CartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void testcases.CartTest.testViewCart())</span>
+                <span class="method-start">431523 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">446842 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testViewCart</span>
+                <span class="method-start">451366 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">458596 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.NavigationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void testcases.NavigationTest.testViewProductDetails())</span>
+                <span class="method-start">459299 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testViewProductDetails</span>
+                <span class="method-start">470879 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">539242 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.CartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void testcases.CartTest.testAddMultipleProducts())</span>
+                <span class="method-start">539792 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">596188 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAddMultipleProducts</span>
+                <span class="method-start">604291 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">625044 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.NavigationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void testcases.NavigationTest.testHomeNavigation())</span>
+                <span class="method-start">625754 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testHomeNavigation</span>
+                <span class="method-start">648825 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">655307 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void testcases.LoginTest.testLoginEmptyFields(java.lang.String,java.lang.String))</span>
+                <span class="method-start">655993 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginEmptyFields(, )</span>
+                <span class="method-start">714693 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">719599 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void testcases.LoginTest.testLoginEmptyFields(java.lang.String,java.lang.String))</span>
+                <span class="method-start">720028 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginEmptyFields(, )</span>
+                <span class="method-start">735038 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">738418 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.SignUpTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void testcases.SignUpTest.testSignUpEmpty())</span>
+                <span class="method-start">738847 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSignUpEmpty</span>
+                <span class="method-start">753593 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">755819 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void testcases.LoginTest.testLoginInvalidEmailFormat(java.lang.String,java.lang.String))</span>
+                <span class="method-start">756268 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLoginInvalidEmailFormat(user.com, pass123)</span>
+                <span class="method-start">771204 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">773553 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void testcases.LoginTest.testLoginInvalidEmailFormat(java.lang.String,java.lang.String))</span>
+                <span class="method-start">773858 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLoginInvalidEmailFormat(user@.com, pass123)</span>
+                <span class="method-start">786535 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">796993 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.CartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void testcases.CartTest.testRemoveProduct())</span>
+                <span class="method-start">797234 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">814364 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testRemoveProduct</span>
+                <span class="method-start">816382 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">818852 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void testcases.LoginTest.testPasswordMasking())</span>
+                <span class="method-start">819338 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPasswordMasking</span>
+                <span class="method-start">838332 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">840002 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.SignUpTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">flushReport</span>
+                <span class="method-start">840497 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

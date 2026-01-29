@@ -7,15 +7,17 @@
   <test thread-count="3" parallel="tests" name="Chrome Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testcases.SignUpTest">
+      <class name="testcases.CartTest">
         <methods>
+          <include name="testAddProductToCart"/>
           <include name="setUpReport"/>
           <include name="tearDown"/>
+          <include name="login"/>
           <include name="flushReport"/>
           <include name="setup"/>
-          <include name="testSignUpUnique"/>
+          <include name="testRemoveProduct"/>
         </methods>
-      </class> <!-- testcases.SignUpTest -->
+      </class> <!-- testcases.CartTest -->
       <class name="testcases.LoginTest">
         <methods>
           <include name="setUpReport"/>
@@ -26,15 +28,6 @@
           <include name="testLoginInvalidPassword" invocation-numbers="0"/>
         </methods>
       </class> <!-- testcases.LoginTest -->
-      <class name="testcases.CheckoutTest">
-        <methods>
-          <include name="setUpReport"/>
-          <include name="testPlaceOrderValid"/>
-          <include name="tearDown"/>
-          <include name="flushReport"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testcases.CheckoutTest -->
     </classes>
   </test> <!-- Chrome Test(failed) -->
 </suite> <!-- Failed suite [MasterMergedSuite] -->
